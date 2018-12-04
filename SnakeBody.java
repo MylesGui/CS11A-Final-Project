@@ -1,64 +1,35 @@
-class SnakeBody 
- {
-    
+class SnakeBody{
   int x;
   int y;
-    
-  public SnakeBody() 
-  {
-    
+  public SnakeBody(){
     x = 0;
     y = 0;
   }
-    
-  public SnakeBody(int a,int b)
-  {
+  public SnakeBody(int a,int b){
     x = a;
     y = b;
   }
-  
-  public SnakeBody(SnakeBody sb)
-  {
+  public SnakeBody(SnakeBody sb){
     this(sb.x,sb.y);
   }
-    
-  
-  
-  
-  
-  public void turnUp()
-  {
+  public void turnUp(){
     y--;
   }
-  
-  public void turnDown()
-  {
+  public void turnDown(){
     y++;
   }
-  
-  public void turnLeft()
-  {
+  public void turnLeft(){
     x--;
   }
-  
-  public void turnRight()
-  {
+  public void turnRight(){
     x++;
   }
-    
-  
-  
-  
-  boolean equals(SnakeBody s)
-  {
-    
-      if((x==s.x)&&(y==s.y)) 
-     return true;
-    
-    
-    
-    else          
-     return false;
+
+  boolean equals(SnakeBody sb){
+    if((x==sb.x)&&(y==sb.y)){
+      return true; 
+    }else{
+      return false; 
+    }          
   }
-  
 }
