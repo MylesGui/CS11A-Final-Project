@@ -17,7 +17,7 @@ public class Panel extends JPanel{
     graph.setColor(Color.black);//background
     graph.fillRect(0, 0, getWidth(), getHeight());
     for(SnakeBody sb : snake){
-      graph.setColor(Color.black);
+      graph.setColor(Color.white);
       graph.drawRect(sb.x*getWidth()/LINE,sb.y*getHeight()/LINE,getWidth()/LINE,getHeight()/LINE);
       graph.setColor(Color.white);
       graph.fillRect(sb.x*getWidth()/LINE,sb.y*getHeight()/LINE,getWidth()/LINE,getHeight()/LINE);

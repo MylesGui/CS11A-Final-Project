@@ -105,7 +105,7 @@ public class Launch extends TimerTask{
   }
 
   public static void main(String[] args){
-    System.out.println("Please type the difficulty: easy, medium, hard. Enter to start. \nControl:\n W or ⬆︎ to go up\n A or ⬅︎ to go left\n S or ⬇︎ to go down\n D or ➔ to go right\n R to restart");
+    System.out.println("Please type the difficulty: easy, medium, hard. Enter to start. \nControl:\n W or ⬆︎ to go up\n A or ⬅︎ to go left\n S or ⬇︎ to go down\n D or ➡︎ to go right\n R to restart\n esc to exit");
     Scanner scan = new Scanner(System.in);
     String difficulty = scan.nextLine();
     int difficultyInt;
